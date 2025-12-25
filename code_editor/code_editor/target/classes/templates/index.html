@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <img src="\images\logo.png" alt="CodeLab Logo" class="logo-img">
+      </div>
+      
+      <div class="toolbar-right">
+      <button id="runbtn" title="runcode">
+       <i class="fa-solid fa-play"></i> 
+      </button>
+      <!-- Language Selector -->
+      <select id="languageSelect">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+        <option value="html">HTML</option>
+      </select>
+
+      <!-- Theme Toggle -->
+      <button id="themeToggle" title="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+    </header>
+    <div id="editor"></div>
+    <div id="terminal">
+      <div class="terminal-header">
+         Output Terminal .
+
+      </div>
+      <pre id="terminalOutput"> 
+        Running
+
+      </pre>
+    </pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f077b295a0.js" crossorigin="anonymous"></script>
+  </body>
+</html>
